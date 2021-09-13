@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 375px;
+    height: 667px;
+    margin: auto;
+    background: #DDDDDD;
+    box-shadow: -8px -8px 16px rgba(201, 201, 201, 0.25), 8px 8px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding-top: 77px;
+}
+
+.bar{
+    height: 24px;
+    background: #000; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.img-container{
+    width: 156px;
+    height: 156px;
+    border-radius: 35px;
+    background: #E1E1E1;
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.25), 8px 8px 16px rgba(97, 97, 97, 0.25);
+    margin: 0 auto 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    width: 123px;
+    height: 123px;
+    border-radius: 35px;
+    box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.25), inset 8px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.music-name{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.artist-name{
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.song-slider{
+    width: 60%;
+    margin: auto;
+    margin-top: 74px;
+    position: relative;
+}
+
+.current-time,
+.song-duration{
+    font-size: 14px;
+}
+
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #E1E1E1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px #000;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 75.21px;
+}
+
+.action-btn{
+    width: 42.7px;
+    height: 42.7px;
+    border: 0;
+    background: #E1E1E1;
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.25), 4px 4px 8px rgba(101, 101, 101, 0.25);
+    border-radius: 20px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.action-btn:focus{
+    outline: 0;
+    box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.25), inset 4px 4px 8px rgba(101, 101, 101, 0.25);
+}
